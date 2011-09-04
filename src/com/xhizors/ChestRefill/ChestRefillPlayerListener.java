@@ -46,7 +46,7 @@ public class ChestRefillPlayerListener extends PlayerListener{
 			}
 		}
 		
-		if (event.getClickedBlock().getTypeId() == 54) {
+		if (event.getClickedBlock() != null && event.getClickedBlock().getTypeId() == 54) {
 			Block b = event.getClickedBlock();
 			ChestData chest = instance.getChestMap().get(instance.findRepeatKey(new BlockData(b.getWorld().getName(), b.getX(), b.getY(), b.getZ())));
 			if (chest != null && chest.canRefill()) {
