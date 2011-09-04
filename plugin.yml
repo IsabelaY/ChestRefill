@@ -1,0 +1,9 @@
+name: ChestRefill
+main: com.xhizors.ChestRefill.ChestRefill
+version: 1.0
+description: >
+             Chest Refill
+commands:
+  addchestrefill:
+    description: Toggle Wordfiter
+    permission: chestrefill.admin
